@@ -7,7 +7,9 @@
 clear,clc,close all
 %Loading the raw seismic data and its header
 %load Book_Seismic_Data
-load rawshotdata.mat
+%load rawshotdata.mat
+load ../../Book_Data/rawshotdata.mat
+addpath('../Codes/');
 Dg = D;
 %%
 %Extracting a certain shot gather or a group of shot gathers from the data matrix D and header structure H

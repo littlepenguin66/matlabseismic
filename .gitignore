@@ -7,6 +7,15 @@
 *.pdf
 *.docx
 
+# pictures
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+
 # latex
 *.tex
 *.bib

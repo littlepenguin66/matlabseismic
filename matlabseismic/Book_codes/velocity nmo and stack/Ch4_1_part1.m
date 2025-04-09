@@ -1,4 +1,4 @@
- This code is for the seismic processing velocity analysis , normal
+% This code is for the seismic processing velocity analysis , normal
 % moveout and stack
 % September 2019-04-05.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
