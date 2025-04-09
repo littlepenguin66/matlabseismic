@@ -1,0 +1,47 @@
+# datas
+*.mat
+*.su
+
+# files
+*.txt
+*.pdf
+*.docx
+
+# latex
+*.tex
+*.bib
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+
+
+# zips
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+*.tar.gz
+*.tar.bz2
+*.tbz2
+*.bz2
+*.bz
+*.tbz
+*.tb2
+*.b2
+*.xz
+*.txz
+*.tar.xz
+*.tar.lzma
+*.tlz
+*.lzma
+*.tlz
+*.lz
+*.tar.lz
+*.tar.lz
+
+# fuck_u_mac
+.DS_Store
