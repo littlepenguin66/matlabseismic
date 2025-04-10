@@ -8,6 +8,8 @@ This is a homework codebase for the MATLAB course at the CUGB. It contains the f
 
 ## How to use
 
+This is branch **ch03**. it's worked for `/Book_codes/gain and agc`.
+
 1. Clone the repository:
 
 ```bash
