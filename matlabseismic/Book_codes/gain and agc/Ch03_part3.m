@@ -7,8 +7,8 @@
 clear,clc,close all
 %Loading the raw seismic data and its header
 %load Book_Seismic_Data.mat
-load ../../Book_Data/rawshotdata.mat
-addpath('../Codes/');
+addpath('../Codes/', '../../Book_Data')
+load rawshotdata.mat
 %%
 %Extracting a certain shot gather or a group of shot gathers from the data matrix D and header structure H
 shot_num = 8; %shot gather number(or range like 1:5 or 2:17)
