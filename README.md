@@ -1,24 +1,24 @@
 # matlabseismic
 
-This is a homework codebase for the MATLAB course at the CUGB. It contains the following:
+A comprehensive MATLAB codebase for seismic analysis and processing, developed during my studies at China University of Geosciences, Beijing (CUGB). This repository contains:
 
-> 1. Simple seismic fuctions for the course.
-> 2. My jobs for the each homework in each branch.
-> 3. Solved some problems in the course based on the upgrade of the MATLAB.
+- Custom seismic processing functions developed to meet course requirements
+- Complete homework solutions organized by chapter in separate branches
+- Modernized implementations with fixes for MATLAB version compatibility issues
 
-## How to use
+## Getting Started
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/littlepenguin66/matlabseismic.git
 cd matlabseismic
-git checkout ch02 (e.g. ch02,ch03...)
+git checkout ch02  # Replace with desired chapter (ch02, ch03, etc.)
 ```
 
-2. Run the code in MATLAB.
-3. Enjoy!
+2. Open and run scripts in MATLAB
+3. Explore and modify the code for your needs
 
-# License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is released under the MIT License - see the [LICENSE](LICENSE) file for details.
