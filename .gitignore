@@ -2,10 +2,12 @@
 *.mat
 *.su
 
-# files
+# files&fonts
 *.txt
 *.pdf
 *.docx
+*.ttc
+*.ttf
 
 # pictures
 *.png
@@ -24,6 +26,7 @@
 *.bbl
 *.blg
 *.out
+*.toc
 
 
 # zips
