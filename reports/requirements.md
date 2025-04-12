@@ -28,10 +28,6 @@
 
 **实验成果总结**：概括实验所取得的主要成果，明确阐述通过实验数据处理是否达成了预期目标。例如，是否成功提取出特定的地震波特征，处理后的数据在精度或其他关键指标上是否达到实验要求等。同时，对比实验前后数据的关键变化，量化说明数据处理带来的效果提升。
 
-**经验与不足分析**：反思实验过程中积累的实践经验，如在算法应用过程中发现的高效参数设置技巧，或者在数据预处理阶段采用的有效方法。此外，分析实验中存在的不足之处，可能包括实验结果未达预期的原因，如算法局限性、数据质量问题或实验操作失误等。针对这些不足，提出具体的改进措施与建议，为后续相关实验或研究提供参考。
-
-**未来研究展望**：基于本次实验成果与不足，对未来相关研究方向进行展望。探讨在现有实验基础上，可进一步拓展的研究内容，例如尝试新的地震数据处理算法，或者对不同类型地震数据进行更深入的研究等，为后续学习与研究提供方向指引。
-
 ## 二、书写规范
 
 **环境要求**：使用 MacOS 系统下的 LaTeX 进行课程实验报告的书写。需确保 LaTeX 环境能够正常输入中文，可通过配置合适的中文字体和宏包来实现，如 xeCJK 宏包等。
@@ -66,6 +62,7 @@
 \usepackage{hyperref}  % 超链接
 \usepackage{cite}  % 引用
 \usepackage{dirtree}  % 目录树结构
+\usepackage{subcaption} % 支持子图排列
 
 % Configure code listings appearance
 \lstset{
@@ -104,12 +101,125 @@
 \geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
 
 \begin{document}
-    % 标题信息
-\title{\textbf{Title}}
-\author{中国地质大学（北京）地球物理与信息技术学院\\ 郑棋壬 1010223222}
-% 不显示日期
+% 标题信息
+\title{\textbf{实验报告标题}}
+\author{作者单位及姓名}
+
 \date{}
 
 \maketitle
+
+\section{实验内容}
+本实验主要聚焦于[实验主题]，通过[编程环境或工具]实现[实验的主要操作和目标]。实验分为[X]个主要部分：
+\begin{enumerate}
+    \item \textbf{部分一标题}：[对部分一的简要描述，如数据读取、某种分析等]
+    \item \textbf{部分二标题}：[对部分二的简要描述，如数据显示、某种处理等]
+\end{enumerate}
+
+\section{实验数据和函数说明}
+\subsection{实验数据基本特征}
+本实验使用的是[数据格式]的[数据类型]文件（[数据文件名]），这些数据包含了[数据的实际来源或相关背景]。具体特征如下：
+\begin{itemize}
+    \item \textbf{数据类型}：[具体数据类型描述]，包含[数据的组成部分，如多个样本等]。
+    \item \textbf{数据结构}：包含[数据结构的组成部分，如矩阵、结构体等]。其中[某部分]包含[该部分的具体内容描述，如实际数据、属性信息等]。
+    \item \textbf{数据规模}：包含[数据规模的描述，如多个数据点等]，每个[数据单元]对应[相关的描述]。
+    \item \textbf{关键信息}：包含[关键信息的描述，如坐标、编号等]。
+\end{itemize}
+
+\subsection{函数说明}
+本实验中使用了多个关键函数，其功能和参数说明如下：
+\begin{enumerate}
+    \item \textbf{函数一名称(参数)}
+          \begin{itemize}
+              \item \textbf{功能}：[函数的功能描述]
+              \item \textbf{输入}：[输入参数的名称及描述]
+              \item \textbf{输出}：[输出结果的名称及描述]
+          \end{itemize}
+
+    \item \textbf{函数二名称(参数)}
+          \begin{itemize}
+              \item \textbf{功能}：[函数的功能描述]
+              \item \textbf{输入}：[输入参数的名称及描述]
+              \item \textbf{输出}：[输出结果的名称及描述]
+          \end{itemize}
+    % 可根据实际函数数量添加更多函数说明
+\end{enumerate}
+
+\newpage
+
+\section{实验结果图说明}
+\subsection{实验部分一结果}
+\subsubsection{图一标题}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{[图片文件名1]}
+    \caption{[图片的简要描述]}
+    \label{fig:[图片标签1]}
+\end{figure}
+图\ref{fig:[图片标签1]}展示了[对图的详细描述，如不同变量的关系等]。
+
+\subsubsection{图二标题}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{[图片文件名2]}
+    \caption{[图片的简要描述]}
+    \label{fig:[图片标签2]}
+\end{figure}
+图\ref{fig:[图片标签2]}显示了[对图的详细描述，如某种分布情况等]。
+% 可根据实际图片数量添加更多图片说明
+
+\subsection{实验部分二结果}
+\subsubsection{图三标题}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{[图片文件名3-1]}
+        \caption{[子图1的简要描述]}
+        \label{fig:[子图标签3-1]}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{[图片文件名3-2]}
+        \caption{[子图2的简要描述]}
+        \label{fig:[子图标签3-2]}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{[图片文件名3-3]}
+        \caption{[子图3的简要描述]}
+        \label{fig:[子图标签3-3]}
+    \end{subfigure}
+    \caption{[整体图的简要描述]}
+    \label{fig:[图片标签3]}
+\end{figure}
+图\ref{fig:[图片标签3]}以[展示方式，如不同模式对比等]展示了[相关内容]，有助于[说明展示的意义或作用]。
+% 可根据实际情况添加更多部分和图片说明
+
+\section{实验代码说明}
+本实验的[编程环境或语言]代码分为[X]个主要部分，下面给出关键部分的代码说明：
+\subsection{实验部分一代码}
+\begin{lstlisting}[style=MATLAB, title=\bf 实验部分一主要代码]
+% 此处填写实验部分一的相关代码
+% 例如数据读取、初步处理等操作的代码
+\end{lstlisting}
+
+\subsection{实验部分二代码}
+\begin{lstlisting}[style=MATLAB, title=\bf 实验部分二主要代码]
+% 此处填写实验部分二的相关代码
+% 例如数据显示、进一步处理等操作的代码
+\end{lstlisting}
+% 可根据实际情况添加更多部分的代码说明
+
+\section{实验总结}
+\begin{enumerate}
+    \item 成功[总结实验的主要操作，如读取数据、解析信息等]，[描述相关操作的具体成果，如提取了哪些关键信息等]。
+    \item 使用[展示方式或工具]展示了[实验数据或结果]，形成了直观对比，理解了[不同展示方式或结果的优缺点]。
+    \item 成功实现了[实验的主要目标或处理步骤，如某种转换、分析等]，并通过[相关图表或数据]分析了[实验结果的相关方面，如分布情况等]。
+\end{enumerate}
+
+\end{document}
 
 ```
